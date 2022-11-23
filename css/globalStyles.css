@@ -1,0 +1,250 @@
+/* Обнуление */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-blue: #0962e8;
+  --color-blue-hovered: #1e78ff;
+  --color-light-blue: #cbecff;
+  --color-light-blue2: #eff9ff;
+  --color-light-blue3: #e9f6ff;
+  --color-dark-blue: #29374e;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Regular.eot");
+  src: url("../fonts/EuclidCircularA-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularA-Regular.woff2") format("woff2"),
+    url("../fonts/EuclidCircularA-Regular.woff") format("woff"),
+    url("../fonts/EuclidCircularA-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-SemiBold.eot");
+  src: url("../fonts/EuclidCircularA-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularA-SemiBold.woff2") format("woff2"),
+    url("../fonts/EuclidCircularA-SemiBold.woff") format("woff"),
+    url("../fonts/EuclidCircularA-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: 400;
+}
+html {
+  scroll-behavior: smooth;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  width: 100vw;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 70%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  scroll-margin-left: 15px;
+  word-wrap: break-word;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 100%;
+}
+
+section {
+  max-width: 1100px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+  background: var(--color-blue);
+  border-radius: 8px;
+  padding: 14px 36px;
+  margin-top: 38px;
+}
+
+button:hover {
+  background: var(--color-blue-hovered);
+}
+
+/* Flex-блоки */
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex_column_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_column_start_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex_row_between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_row_start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_row_end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex_row_centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Текст */
+.centered {
+  text-align: center;
+}
+
+.heading1 {
+  font-size: 64px;
+  line-height: 130%;
+}
+
+.heading2 {
+  font-size: 38px;
+  line-height: 130%;
+}
+
+.heading3 {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.medium {
+  font-size: 22px;
+  line-height: 130%;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.bold {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.dark_blue {
+  color: var(--color-dark-blue);
+}
+
+@media (max-width: 600px) {
+  section {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
